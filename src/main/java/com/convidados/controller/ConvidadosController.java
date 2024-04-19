@@ -10,4 +10,5 @@ public class ConvidadosController {
     public String listar(){
         return "Lista de Convidados";
     }
+
 }
