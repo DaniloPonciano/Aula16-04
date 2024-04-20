@@ -1,18 +1,20 @@
 package com.convidados.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 
+@Entity
 public class Convidados implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
     private long id;
 
+    @Column (nullable = false)
     private String nome;
 
+    @Column (nullable = false)
     private int qtdAcompanhantes;
 
     public long getId() {
